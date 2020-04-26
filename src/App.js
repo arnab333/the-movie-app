@@ -9,18 +9,18 @@ import Movie from './containers/Movie/Movie';
 import './App.css';
 
 class App extends Component {
-   render() {
-      return (
-         <div className="App">
-            <Header />
-            <Switch>
-               <Route path="/" exact component={Home} />
-               <Route path="/:movieId" exact component={Movie} />
-               <Route component={NotFound} />
-            </Switch>
-         </div>
-      );
-   }
+  render() {
+    return (
+      <div className="App">
+        <Header />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/:movieId" exact component={Movie} />
+          <Route component={NotFound} />
+        </Switch>
+      </div>
+    );
+  }
 }
 
 export default App;

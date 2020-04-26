@@ -96,6 +96,7 @@ class Home extends Component {
       .get(endpoint)
       .then((response) => {
         const data = response.data;
+        data.results = data.results.filter((item) => item.id !== 664413);
         const updatedMovies = [...this.state.movies, ...data.results];
 
         // const heroImageValue =
